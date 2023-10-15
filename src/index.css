@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Hannotate TC", sans-serif;
+  font-family: "Wawati SC", sans-serif;
 }
 
 .app {
@@ -13,23 +13,30 @@
 
 header {
   text-align: center;
-  background-color: rgba(255, 251, 244, 0.95);
+  background-color: #fff6e4ef;
   padding: 4px 10%;
   margin-bottom: 10px;
 }
 
 h1 {
   font-style: 45px;
-  color: rgba(254, 178, 46, 0.8);
+  color: #FFB000;
   font-weight: 600;
+}
+
+.taskCardsArea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .taskCard {
   width: 250px;
   padding: 10px 25px;
-  margin:  10px 1%;
+  margin: 10px 1%;
   border-radius: 5px;
-  background-color: rgba(255, 251, 244, 0.95);
+  background-color: #F5F5DC;
   border: 1px solid gray;
 }
 
@@ -73,10 +80,23 @@ h1 {
   background: none;
 }
 
-.AddTaskCardButton {
+.addTaskCardButtonArea {
+  margin: 25px 0 0 1%;
+}
+
+.addTaskCardButton {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: pink;
+  border: none;
+  font-size: 20px;
+  background-color: #FFB000;
   cursor: pointer;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.addTaskCardButton:hover {
+  transform: rotate(180deg);
+  opacity: 1;
 }
