@@ -57,10 +57,18 @@ h1 {
   outline: none;
 }
 
-.task {
+.taskBox {
   background-color: white;
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
   box-shadow: 2px 2px 5px #ccc;
+}
+
+.AddTaskCardButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: pink;
+  cursor: pointer;
 }

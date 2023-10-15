@@ -1,12 +1,12 @@
 import React from "react";
-import { TaskCard } from "./TaskCard";
-import { AddTaskCardButton } from "./button/AddTaskCardButton";
 
-export const Task = () => {
+export const Task = ({ task }) => {
   return (
-    <div>
-      <TaskCard />
-      <AddTaskCardButton />
+    <div className="taskBox">
+      <p className="taskText">{task.text}</p>
+      <button className="taskTrashButton" >
+        <i className="fa-regular fa-trash-can"></i>
+      </button>
     </div>
   );
 };

@@ -1,10 +1,11 @@
 import React from "react";
+import { Task } from "./Task";
 
-export const Tasks = ({ inputText, taskList }) => {
+export const Tasks = ({ taskList }) => {
   return (
     <div>
       {taskList.map((task) => (
-        <div className="task" key={task.text}>{task.text}</div>
+        <Task key={task.text} task={task} />
       ))}
     </div>
   );
