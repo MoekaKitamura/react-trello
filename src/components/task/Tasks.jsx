@@ -2,13 +2,7 @@ import React from "react";
 // see https://github.com/atlassian/react-beautiful-dnd#documentation-
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import { Task } from "./Task";
-
-const reorder = (taskList, startIndex, endIndex) => {
-  console.log(startIndex, "を");
-  console.log(endIndex, "にかえた");
-  const remove = taskList.splice(startIndex, 1);
-  taskList.splice(endIndex, 0, ...remove);
-};
+import { reorder } from "../../reorder";
 
 export const Tasks = ({ taskList, setTaskList }) => {
   const hundleDragEnd = (result) => {
