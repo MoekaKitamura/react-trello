@@ -1,4 +1,6 @@
 import React from "react";
+// see: https://www.npmjs.com/package/uuid
+import { v4 as uuid } from "uuid";
 
 export const TaskAddInput = ({
   inputText,
@@ -8,11 +10,12 @@ export const TaskAddInput = ({
 }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const maxId =
-      taskList.length === 0 ? -1 : Math.max(...taskList.map((task) => task.id));
+    if (inputText === "") return;
+
+    const taskId = uuid();
     setTaskList([
       ...taskList,
-      { id: maxId + 1, draggableId: `task-${maxId + 1}`, text: inputText },
+      { id: taskId, draggableId: `task-${taskId}`, text: inputText },
     ]);
     setInputText("");
   };
