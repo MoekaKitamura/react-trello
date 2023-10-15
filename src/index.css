@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Hannotate TC", sans-serif;
+}
+
+.app {
+  background: url(../src/images/glitter-background.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(255, 251, 244, 0.95);
+  padding: 4px 10%;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-style: 45px;
+  color: rgba(254, 178, 46, 0.8);
+  font-weight: 600;
+}
+
+.task {
+  background-color: rgba(255, 251, 244, 0.95);
+  padding: 10px;
+}
+
+.taskCard {
+  width: 250px;
+  padding: 10px 25px;
+  margin:  10px 1%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.taskCardTitleInputArea {
+  margin-bottom: 10px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.taskCardTitleInput {
+  width: 80px;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.taskAddInput {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
