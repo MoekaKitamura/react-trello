@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export const Tasks = () => {
+export const Tasks = ({ inputText, taskList }) => {
   return (
-    <div>Tasks</div>
-  )
-}
-
+    <div>
+      {taskList.map((task) => (
+        <div className="task" key={task.text}>{task.text}</div>
+      ))}
+    </div>
+  );
+};
