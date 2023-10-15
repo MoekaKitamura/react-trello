@@ -1,12 +1,19 @@
 import React from "react";
 
-export const TaskAddInput = ({ inputText, setInputText, taskList, setTaskList }) => {
+export const TaskAddInput = ({
+  inputText,
+  setInputText,
+  taskList,
+  setTaskList,
+}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTaskList([...taskList, { text: inputText }]);
-    setInputText("")
+    const maxId =
+      taskList.length === 0 ? 0 : Math.max(...taskList.map((task) => task.id));
+    setTaskList([...taskList, { id: maxId + 1, text: inputText }]);
+    setInputText("");
   };
-  
+
   const handleChange = (e) => {
     setInputText(e.target.value);
   };

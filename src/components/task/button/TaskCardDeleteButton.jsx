@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const TaskCardDeleteButton = () => {
   return (
-    <div>TaskCardDeleteButton</div>
-  )
-}
-
+    <div>
+      <i className="fa-regular fa-trash-can"></i>
+    </div>
+  );
+};
