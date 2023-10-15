@@ -9,8 +9,11 @@ export const TaskAddInput = ({
   const handleSubmit = (e) => {
     e.preventDefault();
     const maxId =
-      taskList.length === 0 ? 0 : Math.max(...taskList.map((task) => task.id));
-    setTaskList([...taskList, { id: maxId + 1, text: inputText }]);
+      taskList.length === 0 ? -1 : Math.max(...taskList.map((task) => task.id));
+    setTaskList([
+      ...taskList,
+      { id: maxId + 1, draggableId: `task-${maxId + 1}`, text: inputText },
+    ]);
     setInputText("");
   };
 
