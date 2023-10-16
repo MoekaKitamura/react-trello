@@ -13,7 +13,7 @@
 }
 
 .app {
-  background: #dab88b;
+  background: #e3d2bb;
   height: 100vh;
 }
 
@@ -54,12 +54,11 @@ h1 {
 
 .taskCardTitleInputArea {
   margin-bottom: 10px;
-  width: 30%;
   cursor: pointer;
 }
 
 .taskCardTitleInput {
-  width: 80px;
+  width: 150px;
   font-size: 1.1rem;
   padding: 4px 6px;
   border-radius: 3px;
